@@ -65,8 +65,8 @@ d3.json(
   function showTooltip(event, d) {
     tooltip
       .style("display", "block")
-      .style("left", event.pageX + 10 + "px")
-      .style("top", event.pageY - 30 + "px")
+      .style("left", event.pageX - 245 + "px")
+      .style("top", event.pageY - 45 + "px")
       .attr("data-date", d[0])
       .html(`${d[0]}<br>${d[1]} Billion USD`);
   }
